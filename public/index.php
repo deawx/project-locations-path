@@ -1,4 +1,4 @@
-﻿<?php // GPS locations path test // Javier Rey // javier.rey.eu@gmail.com // April 2015, from a previous test developed March, 2013
+﻿<?php // GPS locations path test // Javier Rey // javier.rey.eu@gmail.com // April 2015, from a previous test developed in March 2013
 
 $iDoc = new Doc();
 
@@ -141,7 +141,7 @@ class Doc
 <head>
 <style type="text/css">
 body {background-color:#eeeeee;}
-input,select,textarea,pre,span,a,p,li,td,div,body {font-family:Verdana,Arial,Helvetica; font-size:11px; text-decoration:none; color:#333366;}
+input,select,textarea,pre,span,a,p,li,td,div,body {font-family: sans-serif; font-size: 11px; text-decoration: none; color: #333366;}
 #panelDiv {
 	width: 740px; height: 720px;
 	border: solid 1px #cccccc;
