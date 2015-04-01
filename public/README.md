@@ -26,6 +26,8 @@ Usage:
 
     Value -2 is reserved to set a zero threshold: Full filtering, only journey stops will show.
 
+    Real time scale would be a value of 1000. Set to 15 by default for a faster tracking.
+
 Requirements and dependencies
 
     This project requires Apache and PHP properly installed in the hosting system.
