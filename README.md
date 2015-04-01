@@ -22,7 +22,7 @@ Usage:
 
     Set other parameter values in the URL query and reload.
 
-    Value -1 is reserved to set a huge threshold: No filtering, all entries are shown.
+    Value -1 is reserved to set a huge threshold (1000): No filtering, all entries are shown.
 
     Value -2 is reserved to set a zero threshold: Full filtering, only journey stops will show.
 

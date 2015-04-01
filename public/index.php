@@ -27,10 +27,10 @@ class Doc
         if (self::$A_THRESHOLD == 0) {self::$A_THRESHOLD = 1.32;} // Def Default
         if (self::$TIME_SCALE == 0) {self::$TIME_SCALE = 15;} // Def Default
 
-        if (self::$V_THRESHOLD == -1) {self::$V_THRESHOLD = 1e2;} // Huge, no filter
+        if (self::$V_THRESHOLD == -1) {self::$V_THRESHOLD = 1e3;} // Huge, no filter
         if (self::$V_THRESHOLD == -2) {self::$V_THRESHOLD = 0;} // Stops full filter
 
-        if (self::$A_THRESHOLD == -1) {self::$A_THRESHOLD = 1e2;} // Huge, no filter
+        if (self::$A_THRESHOLD == -1) {self::$A_THRESHOLD = 1e3;} // Huge, no filter
         if (self::$A_THRESHOLD == -2) {self::$A_THRESHOLD = 0;} // Stops full filter
 
         self::setlocationsHistory();
@@ -239,7 +239,7 @@ Input Values: <?php echo "v=".Doc::$V_THRESHOLD.", a=".Doc::$A_THRESHOLD.", t=".
 </div>
 URL: http://javierrey.com/project-locations-path/?v=0&amp;a=0&amp;t=0 (v: Speed Threshold, a: Acceleration Threshold, t: Time Scale)
 <br/>Use 0 for default values: v: 3.65, a: 1.32, t: 15
-<br/>Use -1 for no filtering, huge thresholds: v: 100, a: 100
+<br/>Use -1 for no filtering, huge thresholds: v: 1000, a: 1000
 <br/>Use -2 for full filtering, only stops: v: 0, a: 0
 <br/>
 </body>
