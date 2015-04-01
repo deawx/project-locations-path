@@ -65,9 +65,9 @@ class Doc
 		for ($i = 0; $i < count(self::$locationsHistory); $i++) {
 			$valid = true;
 			if ($i > 0 && $i < count(self::$locationsHistory)-1) { // Always Plot First and Last Pos
-				$dt = self::$locationsHistory[$i][2]-self::$locationsHistory[$i-1][2];
-				$sx = self::$locationsHistory[$i][1]-self::$locationsHistory[$i-1][1]; // Longitude index 1
-				$sy = self::$locationsHistory[$i][0]-self::$locationsHistory[$i-1][0]; // Latitude index 0
+				$dt = self::$locationsHistory[$i][2]-self::$locationsHistory[$i-1][2]; // Time column index 2
+				$sx = self::$locationsHistory[$i][1]-self::$locationsHistory[$i-1][1]; // Longitude column index 1
+				$sy = self::$locationsHistory[$i][0]-self::$locationsHistory[$i-1][0]; // Latitude column index 0
 				$ds = sqrt($sx*$sx+$sy*$sy);
 				$v = $ds/$dt;
 				if (abs($v) > $vlim) {
@@ -240,7 +240,7 @@ Input Values: <?php echo "v=".Doc::$V_THRESHOLD.", a=".Doc::$A_THRESHOLD.", t=".
 URL: http://javierrey.com/project-locations-path/?v=0&amp;a=0&amp;t=0 (v: Speed Threshold, a: Acceleration Threshold, t: Time Scale)
 <br/>Use 0 for default values: v: 3.65, a: 1.32, t: 15
 <br/>Use -1 for no filtering, huge thresholds: v: 1000, a: 1000
-<br/>Use -2 for full filtering, only stops: v: 0, a: 0
+<br/>Use -2 for full filtering, only shows stops: v: 0, a: 0
 <br/>
 </body>
 </html>
