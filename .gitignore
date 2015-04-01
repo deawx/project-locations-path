@@ -1,0 +1,15 @@
+.git/
+.idea/
+.settings/
+.buildpath
+.project
+.classpath
+.DS_Store
+*.iml
+composer.lock
+vendor/*
+#bin*/*
+*/assets/logs/*
+*/assets/temp/*
+*/assets/save/*
+*/assets/files/*

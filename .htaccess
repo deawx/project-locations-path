@@ -1,0 +1,6 @@
+# /var/www/project-locations-path/
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/project-locations-path/public/ [NC]
+RewriteRule ^(.*)$ /project-locations-path/public/$1 [NC,QSA,L]
+#RewriteCond %{REQUEST_URI} !^/javierrey/public/project-locations-path/public/ [NC]
+#RewriteRule ^(.*)$ /javierrey/public/project-locations-path/public/$1 [NC,QSA,L]
