@@ -14,7 +14,7 @@ Usage:
 
     Web URL (replace hostname as appropriate):
 
-        http://localhost/project-locations-path/?v=0&a=0&t=0
+        http://javierrey.com/project-locations-path/?v=0&a=0&t=0
 
     All parameters set to 0 will use the internal default values:
 
