@@ -7,6 +7,7 @@
 .DS_Store
 *.iml
 composer.lock
+Thumbs.db
 vendor/*
 #bin*/*
 */assets/logs/*
