@@ -8,7 +8,7 @@ Description
     timestamps, based on parameters speed and acceleration thresholds.
 
     After cleaning the locations path, it plots the resulting route over a map,
-    using a stretched timescale to quickly complete the journey.
+    using a shrunk timescale to quickly complete the journey.
 
 Usage:
 
